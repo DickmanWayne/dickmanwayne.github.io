@@ -1,0 +1,107 @@
+/* Notes and Focus
+1) using alpha.2 of css reset;
+    bug season is in. Happy hunting
+2) single column page functionality
+    K.I.S.S.
+3) "an hour of work now is two hours saved tomorrow"
+    - Thinking Forth, Leo Brodie
+4) static and minimal
+/*
+
+/*****
+Resets
+- set browser to my preferred base specs
+*****/
+
+/*Main View*/
+body {
+    margin: 0 auto; /*float in center of big screen*/
+    padding: 0;
+    max-width: 960px; /*guide user focus to center on bigger screens*/
+    font-family: Arial, sans-serif;
+    font-size: 14pt;
+    box-sizing: border-box; /*take note!*/
+    background-color: #222222; /*feel free to omit or alter*/
+}
+
+@media (min-width: 1500px) {
+    body {
+        max-width: 1330px; /*especially big screens may dwarf center with margins; helps prevent*/
+    }
+}
+
+/*Blocks - stay blocky*/
+
+address, article, aside, blockquote, canvas, dd, div, dl, dt, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hr, li, main, nav, noscript, ol, p, pre, section, table, tfoot, ul, video {
+    all: inherit; /*important! homogenize*/
+    margin: 0px; /*no floaties*/
+    font-size: 1em; /*I make my case later, notice the h1-h6*/
+}
+
+/*Inlines - make blocky*/
+
+a, abbr, acronym, b, bdo, big, br, button, cite, code, dfn, em, i, img, input, kbd, label, map, object, output, q, samp, script, select, small, span, strong, sub, sup, textarea, time, tt, var {
+    all: inherit; /*important! homogenize*/
+    margin: 0px; /*no floaties*/
+    font-size: 1em;
+    display: inline-block; /*blocks are easier to work with*/
+}
+
+/*****
+Styles
+*****/
+
+/*Background*/
+
+.bg-offwhite {
+    background-color: #DDDDDD;
+}
+
+.bg-white {
+    background-color: #FFFFFF;
+}
+
+.bg-testblue {
+    background-color: blue;
+}
+
+.bg-testred {
+    background-color: red;
+}
+
+
+/*Arrangement*/
+
+.arng-indent {
+    margin-left: 5ch;
+}
+
+/*Dimensions*/
+
+.dim-fullwide {
+    width: 100%;
+    float: left;
+}
+
+.dim-quarterwide {
+    width: 25%;
+    float: left;
+}
+
+/*Misc - for specialized or unfactored solutions*/
+
+.misc-bannerheight {
+    height: 20vh;
+}
+
+.misc-halfheight {
+    height: 50%;
+}
+
+
+
+
+
+
+
+
