@@ -13,6 +13,11 @@ Resets
 - set browser to my preferred base specs
 *****/
 
+/*set scroll for whole page*/
+html {
+    scroll-behavior: smooth;
+}
+
 /*Main View*/
 body {
     margin: 0 auto; /*float in center of big screen*/
@@ -172,17 +177,21 @@ Styles
 
 .misc-bannerheight {
     height: 20vh;
+    min-height: 72px;
+    max-height: 96px;
 }
 
 @media (orientation: landscape) and (max-height: 480px) {
     .misc-bannerheight {
         height: 40vh; /*Prevents text collision on short screens*/
+        min-height: 72px;
+        max-height: 96px;
     }
 }
 
 @media (min-height: 480px) {
     .misc-banner {
-        height: 96px; /*Lock banner max height to prevent constant growth with large screens*/
+        height: 96px; /*Lock banner height to prevent constant growth with large screens*/
     }
 }
 
