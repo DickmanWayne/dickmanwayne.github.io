@@ -121,6 +121,12 @@ Styles
     float: left;
 }
 
+/*Shapes - border radius*/
+
+.shp-bevel {
+    border-radius: 1em;
+}
+
 /*Font*/
 
 .ft-center {
