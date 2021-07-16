@@ -66,6 +66,10 @@ Styles
     background-color: #FFFFFF;
 }
 
+.bg-offblack {
+    background-color: #333333;
+}
+
 .bg-testblue {
     background-color: blue;
 }
@@ -99,6 +103,10 @@ Styles
 
 .spc-top {
     margin-top: 1em;
+}
+
+.spc-bottom {
+    margin-bottom: 1em;
 }
 
 /*Dimensions*/
@@ -161,6 +169,10 @@ Styles
 
 .ft-medlight {
     font-weight: 300;
+}
+
+.ft-white {
+    color: #FFFFFF;
 }
 
 /*Borders - will get complicated*/
