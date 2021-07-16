@@ -24,7 +24,7 @@ body {
     background-color: #222222; /*feel free to omit or alter*/
 }
 
-@media (min-width: 1500px) {
+@media screen (min-width: 1500px) {
     body {
         max-width: 1330px; /*especially big screens may dwarf center with margins; helps prevent*/
     }
@@ -70,10 +70,30 @@ Styles
 }
 
 
-/*Arrangement*/
+/*Arrangement - altering internal layout*/
 
 .arng-indent {
-    margin-left: 5ch;
+    padding-left: 4ch;
+}
+
+/*Buffers - space inside the object*/
+
+.buf-bottom {
+    padding-bottom: 1em;
+}
+
+.buf-topthin {
+    padding-top: 0.5em;
+}
+
+.buf-sides {
+    padding: 0em 0.5em;
+}
+
+/*Spacing - margins between objects*/
+
+.spc-top {
+    margin-top: 1em;
 }
 
 /*Dimensions*/
@@ -88,16 +108,87 @@ Styles
     float: left;
 }
 
+/*Font*/
+
+.ft-center {
+    text-align: center;
+}
+
+.ft-jumbo {
+    font-size: 1.8em;
+}
+
+.ft-extralarge {
+    font-size: 1.6em;
+}
+
+.ft-large {
+    font-size: 1.4em;
+}
+
+.ft-medlarge {
+    font-size: 1.2em;
+}
+
+.ft-small {
+    font-size: 0.8em;
+}
+
+.ft-fine {
+    font-size: 0.6em;
+}
+
+.ft-italic {
+    font-style: italic;
+}
+
+.ft-underline {
+    text-decoration: underline;
+}
+
+.ft-bolder {
+    font-weight: 475;
+}
+
+.ft-medbold {
+    font-weight: 550;
+}
+
+.ft-medlight {
+    font-weight: 300;
+}
+
+/*Borders - will get complicated*/
+
+.border-vertsolid {
+    border-style: solid none;
+}
+
+.border-thin {
+    border-width: 1px;
+}
+
 /*Misc - for specialized or unfactored solutions*/
 
 .misc-bannerheight {
     height: 20vh;
 }
 
+@media (orientation: landscape) and (max-height: 480px) {
+    .misc-bannerheight {
+        height: 40vh; /*Prevents text collision on short screens*/
+    }
+}
+
+@media (min-height: 480px) {
+    .misc-banner {
+        height: 96px; /*Lock banner max height to prevent constant growth with large screens*/
+    }
+}
+
 .misc-halfheight {
     height: 50%;
 }
-
 
 
 
